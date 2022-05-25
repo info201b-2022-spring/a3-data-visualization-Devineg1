@@ -1,0 +1,36 @@
+---
+title: "A3"
+author: "Devine Getachew"
+date: '2022-05-19'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+chooseCRANmirror(graphics = FALSE, ind = 1)
+source("analysis.R")
+```
+
+## Devine Getachew's Data Visualization Assignment on Incarceration Between Races 
+  Women are the fastest growing portion of the jailed population, expanding at over double the rate of men since 1985, with over one million women behind bars or under the supervision of the criminal justice system. Understanding the full repercussions of mass imprisonment and unraveling the systems and practices that contribute to their criminalization requires research on female incarceration. It’s also widely know that minority groups tend to be incarcerated more frequently than their white peers. I, Devine Getachew wanted to see the difference of women incarceration per year in America with women of color vs. white women since the year 2000. In this analysis I analyze the female prison population between 3 races: black, white, and latinex. I focused on these specific groups to see the the difference in incarceration that follows discrimination and being a person of color versus being white. 
+
+  Looking at the data `r format (filteredblackminyear)` black women, `r format (filteredwhiteyear)` white women, and  `r format (femalelatinxyear)` were incarcerated in 2000. These data points clearly prove that there is a vast difference in the number of women being incarcerated. Being that racism has been ingrained in the history of America, it is safe to say that it plays a part in the rate of incarceration between colored and white people. This is proven in the fact that the number of black and latinx women that were incarcerated in 2000 were both higher than the amount of female white women. Additionally, the highest number of incarcerated black females to ever be recorded was `r format (femaleblackmax)` and the highest number for latinx women was `r format (femalelatinxmax)`. In comparison to these numbers, the highest number of women incarcerated in a year was `r format (femalewhitemax)`. Once again we can see that the number of white women incarcerated is significantly lower than those of the black and latinx race. Due to factors such as discrimination and racism, the incarcerated black group was larger than both the other two groups. The black population was about double the latinx and triple the white population. From the data, you can also note that in all values given, the black incarceration population has always been the greatest. 
+
+
+
+This plot compares the amount of incarceration between White, Black, and Latinx women in America over the yeas starting in 2000.
+
+```{r cars, warning=FALSE, message=FALSE, echo=FALSE}
+Female_race_plot
+
+```
+
+## Including Plots
+
+This plot shows the combined number of black, white, and latinx females incarcerated over the years. 
+```{r pressure, echo=FALSE}
+Create_trend_chart
+Map
+```
+
+The map above is showing the trend of black women incarceration in each state of America. 
